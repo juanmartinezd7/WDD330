@@ -10,3 +10,6 @@ https://github.com/NefiMuniz/wdd330--Team06
 Netlify:
 term3-wdd330-team06.netlify.app
 
+Netlify:
+https://sleepoutsidewebsite.netlify.app/
+
