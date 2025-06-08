@@ -1,6 +1,6 @@
 export default async function loadAlerts() {
   try {
-    const response = await fetch("/json/alerts.json");
+    const response = await fetch("../json/alerts.json");
     const alerts = await response.json();
     const container = document.getElementById("alerts-container");
 
