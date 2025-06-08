@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+/* === Header Logo and Title === */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.header-container h1 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form input,
+form button,
+form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    flex: 1 1 200px;
+}
+
+section {
+    margin-top: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+li.selected {
+    background-color: #cdeffd;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        max-width: 800px;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    form input,
+    form button,
+    form select {
+        flex: 0 1 auto;
+        min-width: 150px;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 1.5rem auto;
+    }
+}
+
+/* === Recipe Details Styling === */
+
+#recipeSection,
+#ingredientSection,
+#instructionsSection,
+#grocerySection {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+#recipeSection h2,
+#ingredientSection h2,
+#instructionsSection h2,
+#grocerySection h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+}
+
+#instructionsText {
+    white-space: pre-line;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #444;
+    background-color: #f9f9f9;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+/* === Pictures Styling === */
+
+#detailsSection {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+#recipeDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+#recipeDetails p {
+    margin: 0.25rem 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+#detailsSection,
+#instructionsSection {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements on small screens */
+    align-items: center;
+    /* Center elements */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    gap: 10px;
+    /* Space between elements */
+}
+
+/* Wrap first paragraph and image together */
+#footer-top {
+    display: flex;
+    align-items: center;
+    /* Align image and text in the center */
+    gap: 10px;
+    /* Space between text and image */
+}
+
+
+/* Ensure text and image are aligned properly */
+#year {
+    margin: 0;
+}

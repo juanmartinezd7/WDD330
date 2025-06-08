@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe & Grocery Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="images/logo.JPG" alt="Logo" class="logo" />
+        <h1>Recipe Finder + Grocery Lookup</h1>
+    </div>
+
+
+    <form id="searchForm">
+        <input type="text" id="recipeInput" placeholder="Search recipe (e.g. chicken)">
+        <select id="categorySelect">
+            <option value="">--Filter by Category--</option>
+        </select>
+        <button type="submit">Find Recipes</button>
+        <button type="button" id="clearBtn">Clear</button>
+    </form>
+
+    <section id="recipeSection">
+        <h2>Recipes</h2>
+        <ul id="recipeList"></ul>
+    </section>
+
+    <section id="ingredientSection">
+        <h2>Ingredients</h2>
+        <ul id="ingredientList"></ul>
+    </section>
+
+    <section id="grocerySection">
+        <h2>Grocery Products</h2>
+        <ul id="groceryList"></ul>
+    </section>
+
+    <section id="detailsSection">
+        <h2>Recipe Details</h2>
+        <div id="recipeDetails">
+            <img id="mealThumb" src="images/meal.JPG" alt="No recipe selected"
+                style="max-width: 100%; border-radius: 8px;" />
+            <p><strong>Region:</strong> <span id="mealArea"></span></p>
+            <p><strong>Tags:</strong> <span id="mealTags"></span></p>
+        </div>
+    </section>
+
+
+    <section id="instructionsSection">
+        <h2>Instructions</h2>
+        <p id="instructionsText"></p>
+    </section>
+
+
+    <footer>
+        <div id="footer-top">
+            <p id="year">©<span id="currentyear"></span> 🥙 WDD 330 🥙 Juan Martinez 🥙</p>
+        </div>
+        <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+    </footer>
+
+
+
+</body>
+
+</html>
